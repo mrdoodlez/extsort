@@ -634,9 +634,12 @@ bool assert_monotonic(iterator f, iterator l) {
 
 void usage() {
     cout << "usage:" << endl;
-    cout << "./genrand [options]" << endl;
+    cout << "./extsort [options]" << endl;
     cout << "options:" << endl;
-    cout << "    -h                     this output" << endl;
-    cout << "    -v <size>              random binary file size in MBytes" << endl;
-    cout << "    -o <output file name>  output file name" << endl;
+    cout << "    -h                           this output" << endl;
+    cout << "    -b                           perform benchmark self-test" << endl;
+    cout << "    -e                           perform extsort self-test" << endl;
+    cout << "    -f <input/output file name>  file to sort (in-place)" << endl;
+    cout << "    -m <memory size>             available memory in MBytes" << endl;
+    cout << "    -f <threads>                 thread count for radix-sort" << endl;
 }
